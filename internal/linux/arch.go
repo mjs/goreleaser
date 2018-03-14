@@ -12,7 +12,7 @@ func Arch(key string) string {
 		return "i386"
 	case strings.Contains(key, "arm64"):
 		return "arm64"
-	case strings.Contains(key, "arm6"):
+	case strings.Contains(key, "arm6"), strings.Contains(key, "arm7"):
 		return "armhf"
 	}
 	return key
